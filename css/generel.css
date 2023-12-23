@@ -10,10 +10,22 @@ header {
 .nav-link {
   color: #ff1139;
 }
+h1 {
+  color: #ff1139;
+  font-size: 10cqw;
+}
+.center {
+  display: flex;
+  margin: auto;
+}
 body {
   background-color: #fff8e6;
 }
-
+/*
+main {
+  width: 80%;
+  margin: auto;
+}*/
 .forsidecontainer {
   aspect-ratio: 16/9;
   background-image: url(../img/illustrations/backgroundimg.webp);
