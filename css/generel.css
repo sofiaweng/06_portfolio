@@ -1,3 +1,21 @@
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  border-bottom: #ff1139 1px solid;
+}
+.nav-link {
+  color: #ff1139;
+}
 body {
   background-color: #fff8e6;
+}
+
+.forsidecontainer {
+  aspect-ratio: 16/9;
+  background-image: url(../img/illustrations/backgroundimg.webp);
+  background-size: cover;
 }
