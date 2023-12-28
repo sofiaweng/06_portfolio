@@ -44,7 +44,7 @@ img {
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #007fb7;
+  background-color: #ff1139;
 }
 /*-------------mobil---------------*/
 @media (max-width: 900px) {
@@ -65,20 +65,20 @@ img {
   /*menu settings, standard gør den ikke synlig*/
   .nav-menu {
     position: absolute;
-    top: -100%;
+    left: 100%;
+    top: 11.7ch;
     gap: 0;
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    z-index: 1;
   }
   .nav-item {
     margin: 16px 0;
   }
   /*kommer frem, når den er active*/
   .nav-menu.active {
-    top: 14ch;
+    left: 0;
   }
 }
