@@ -12,7 +12,7 @@ header {
 }
 h1 {
   color: #ff1139;
-  font-size: 11cqw;
+  font-size: 14cqw;
   text-align: center;
 }
 
@@ -22,21 +22,26 @@ body {
 
 .hero-img {
   display: grid;
-  aspect-ratio: 5/9;
+  aspect-ratio: 80/100;
   background-image: url(../img/illustrations/backgroundimg.svg);
   background-size: cover;
   padding-bottom: 2%;
   border-bottom: #ff1139 1px solid;
+  width: 100%;
+  height: auto;
 }
 .hero-text {
   align-self: self-end;
 }
-
+.hero-button {
+  align-self: self-end;
+  padding-bottom: 5%;
+}
 .button {
   aspect-ratio: 318/91;
   background-image: url(../img/icons/button.webp);
   background-size: cover;
-  width: 28%;
+  width: 35%;
   height: auto;
   /*placerer item i midten*/
   margin: auto;
@@ -44,7 +49,7 @@ body {
 .button p {
   text-align: center;
   padding: 8%;
-  font-size: 3cqw;
+  font-size: 3.5cqw;
   color: #ff1139;
 }
 .pil {
@@ -60,8 +65,17 @@ body {
 }
 
 /*DESKTOP*/
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .hero-img {
-    aspect-ratio: 16/9;
+    aspect-ratio: 1920/830;
+  }
+  .hero-button {
+    padding-bottom: 0%;
+  }
+  .button {
+    width: 18%;
+  }
+  .button p {
+    font-size: 2cqw;
   }
 }
