@@ -12,7 +12,7 @@ header {
 }
 h1 {
   color: #ff1139;
-  font-size: 10cqw;
+  font-size: 11cqw;
   text-align: center;
 }
 
@@ -22,24 +22,46 @@ body {
 
 .hero-img {
   display: grid;
-  aspect-ratio: 16/9;
+  aspect-ratio: 5/9;
   background-image: url(../img/illustrations/backgroundimg.svg);
   background-size: cover;
+  padding-bottom: 2%;
+  border-bottom: #ff1139 1px solid;
 }
 .hero-text {
-  align-self: center;
+  align-self: self-end;
 }
 
 .button {
-  aspect-ratio: 317/90;
+  aspect-ratio: 318/91;
   background-image: url(../img/icons/button.webp);
   background-size: cover;
   width: 28%;
   height: auto;
+  /*placerer item i midten*/
   margin: auto;
 }
 .button p {
   text-align: center;
   padding: 8%;
   font-size: 3cqw;
+  color: #ff1139;
+}
+.pil {
+  aspect-ratio: 23/32;
+  background-image: url(../img/icons/arrowdown.webp);
+  background-size: cover;
+  height: auto;
+  width: 2.5%;
+  /*placerer item i midten*/
+  margin: auto;
+  /*luft mellem knapperne*/
+  margin-top: 5px;
+}
+
+/*DESKTOP*/
+@media (min-width: 900px) {
+  .hero-img {
+    aspect-ratio: 16/9;
+  }
 }
