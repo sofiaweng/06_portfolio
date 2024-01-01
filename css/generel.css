@@ -73,9 +73,17 @@ body {
     padding-bottom: 0%;
   }
   .button {
-    width: 18%;
+    width: 20%;
   }
   .button p {
     font-size: 2cqw;
+  }
+  .pil {
+    width: 2%;
+    margin-top: 10px;
+  }
+  main {
+    width: 95%;
+    margin: auto;
   }
 }
