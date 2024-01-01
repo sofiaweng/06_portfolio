@@ -65,7 +65,7 @@ img {
   /*menu settings, standard gør den ikke synlig*/
   .nav-menu {
     position: absolute;
-    left: 100%;
+    left: -100%;
     top: 11.7ch;
     gap: 0;
     flex-direction: column;

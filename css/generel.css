@@ -13,21 +13,33 @@ header {
 h1 {
   color: #ff1139;
   font-size: 10cqw;
+  text-align: center;
 }
-.center {
-  display: flex;
-  margin: auto;
-}
+
 body {
   background-color: #fff8e6;
 }
-/*
-main {
-  width: 80%;
-  margin: auto;
-}*/
-.forsidecontainer {
+
+.hero-img {
+  display: grid;
   aspect-ratio: 16/9;
-  background-image: url(../img/illustrations/backgroundimg.webp);
+  background-image: url(../img/illustrations/backgroundimg.svg);
   background-size: cover;
+}
+.hero-text {
+  align-self: center;
+}
+
+.button {
+  aspect-ratio: 317/90;
+  background-image: url(../img/icons/button.webp);
+  background-size: cover;
+  width: 28%;
+  height: auto;
+  margin: auto;
+}
+.button p {
+  text-align: center;
+  padding: 8%;
+  font-size: 3cqw;
 }
