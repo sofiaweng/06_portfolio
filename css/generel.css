@@ -39,7 +39,7 @@ body {
   display: grid;
 }
 /*tekst og knap tilhørende til hero-fill*/
-.hero-button {
+#hero-button {
   padding-bottom: 5%;
   align-self: self-end;
 }
@@ -59,11 +59,11 @@ body {
   font-size: 3.5cqw;
   transition: 0.2s;
 }
-.button:hover {
+.buttonhover {
   background-image: url(../img/icons/button_hover.webp);
   transition: 0.5s;
 }
-.button p:hover {
+.hoveronp {
   font-style: italic;
   transition: 0.2s;
 }
@@ -96,7 +96,7 @@ body {
   .hero-fill {
     align-self: self-end;
   }
-  .hero-button {
+  #hero-button {
     padding-bottom: 0%;
   }
   .button {
