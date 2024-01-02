@@ -31,6 +31,10 @@ body {
   height: auto;
   transition: 1s;
 }
+.hero-img:hover {
+  background-image: url(../img/illustrations/backgroundimg3.svg);
+  transition: 1s;
+}
 /*container for tekst og knap til section*/
 .hero-fill {
   display: grid;
@@ -41,19 +45,29 @@ body {
   align-self: self-end;
 }
 .button {
-  aspect-ratio: 318/91;
-  background-image: url(../img/icons/button.webp);
+  aspect-ratio: 485/127;
+  background-image: url(../img/icons/button_default.webp);
   background-size: cover;
-  width: 38%;
+  width: 40%;
   height: auto;
   /*placerer item i midten*/
   margin: auto;
+  transition: 0.5s;
 }
 .button p {
   text-align: center;
   padding: 8%;
   font-size: 3.5cqw;
   color: #ff1139;
+  transition: 0.2s;
+}
+.button:hover {
+  background-image: url(../img/icons/button_hover.webp);
+  transition: 0.5s;
+}
+.button p:hover {
+  font-style: italic;
+  transition: 0.2s;
 }
 .pil {
   aspect-ratio: 23/32;
@@ -71,7 +85,7 @@ body {
 }
 /*DESKTOP*/
 @media (min-width: 700px) {
-  main {
+  body {
     width: 90%;
     margin: auto;
   }
@@ -88,7 +102,7 @@ body {
     padding-bottom: 0%;
   }
   .button {
-    width: 22%;
+    width: 25.5%;
   }
   .button p {
     font-size: 1.9cqw;
