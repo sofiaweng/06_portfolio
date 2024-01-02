@@ -29,7 +29,9 @@ body {
   border-bottom: #ff1139 1px solid;
   width: 100%;
   height: auto;
+  transition: 1s;
 }
+
 .hero-text {
   align-self: self-end;
 }
@@ -67,7 +69,8 @@ body {
 /*DESKTOP*/
 @media (min-width: 700px) {
   .hero-img {
-    aspect-ratio: 1920/830;
+    aspect-ratio: 1920/908;
+    transition: 1s;
   }
   .hero-button {
     padding-bottom: 0%;
