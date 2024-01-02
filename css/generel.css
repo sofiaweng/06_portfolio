@@ -83,7 +83,28 @@ body {
   align-self: self-end;
 }
 /*----------------portfolio indholdsfortegnelse-------------------*/
-
+#indholdsfortegnelse {
+  padding: 2ch;
+}
+.grid_1fr-1fr {
+  padding-top: 2ch;
+}
+.boks {
+  background-color: #ffbabd;
+  border: 1px solid #ff1139;
+  padding: 1ch;
+}
+.boks p {
+  font-size: 3.5cqw;
+}
+.tema {
+  display: flex;
+  gap: 1ch;
+}
+.tema h2,
+.tema h3 {
+  font-size: 5cqw;
+}
 /*DESKTOP*/
 @media (min-width: 700px) {
   body {
@@ -111,6 +132,26 @@ body {
   .pil {
     width: 2%;
     margin-top: 10px;
+  }
+  #indholdsfortegnelse {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .boks {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+  }
+  .tema {
+    display: grid;
+    gap: 1ch;
+    order: 2;
+  }
+  .tema h2 {
+    font-size: 5.5cqw;
+  }
+  .tema h3 {
+    font-size: 3.5cqw;
   }
 }
 /*ANIMATIONER*/
