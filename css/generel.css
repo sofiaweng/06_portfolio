@@ -12,9 +12,16 @@ header {
 h1 {
   color: #ff1139;
   font-size: 14cqw;
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
+h2,
+h3 {
+  font-family: "Marcellus", serif;
+}
 body {
+  font-family: "Red Rose", serif;
+  font-weight: 300;
   background-color: #fff8e6;
 }
 
@@ -48,7 +55,7 @@ body {
   aspect-ratio: 485/127;
   background-image: url(../img/icons/button_default.webp);
   background-size: cover;
-  width: 40%;
+  width: 45%;
   height: auto;
   /*placerer item i midten*/
   margin: auto;
@@ -124,7 +131,7 @@ body {
     padding-bottom: 0%;
   }
   .button {
-    width: 25.5%;
+    width: 27%;
   }
   .button p {
     font-size: 1.9cqw;
