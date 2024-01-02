@@ -16,6 +16,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 const pil = document.querySelector(".pil");
 const button = document.querySelector(".button");
 const buttontext = document.querySelector(".buttontext");
+const herotext = document.querySelector(".hero-text");
+
 window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenvises");
@@ -24,6 +26,10 @@ function sidenVises() {
   pil.addEventListener("mouseout", herobutton_mouseout);
   button.addEventListener("mouseover", herobutton_mouseover);
   button.addEventListener("mouseout", herobutton_mouseout);
+  //tilføjer animation på tekst på forsiden
+  herotext.classList.add("flyvop");
+  button.classList.add("flyvop", "delay2");
+  pil.classList.add("flyvop", "delay3");
 }
 function herobutton_mouseover() {
   button.classList.add("buttonhover");

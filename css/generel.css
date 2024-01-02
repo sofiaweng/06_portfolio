@@ -81,6 +81,8 @@ body {
 .hero-text {
   align-self: self-end;
 }
+/*----------------portfolio indholdsfortegnelse-------------------*/
+
 /*DESKTOP*/
 @media (min-width: 700px) {
   body {
@@ -109,4 +111,30 @@ body {
     width: 2%;
     margin-top: 10px;
   }
+}
+/*ANIMATIONER*/
+.flyvop {
+  animation-name: flyvop_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes flyvop_kf {
+  0% {
+    translate: 0 300%;
+  }
+  100% {
+    translate: 0%;
+  }
+}
+.pos1 {
+  translate: 0 300%;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+.delay3 {
+  animation-delay: 0.5s;
 }
