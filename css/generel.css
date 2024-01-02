@@ -29,6 +29,7 @@ body {
   width: 100%;
   height: auto;
   transition: 1s;
+  overflow: hidden;
 }
 .hero-img:hover {
   background-image: url(../img/illustrations/backgroundimg3.svg);
