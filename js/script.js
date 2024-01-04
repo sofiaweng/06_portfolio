@@ -17,6 +17,8 @@ const pil = document.querySelector(".pil");
 const button = document.querySelector(".button");
 const buttontext = document.querySelector(".buttontext");
 const herotext = document.querySelector(".hero-text");
+const boks = document.querySelectorAll(".boks");
+const tema = document.querySelectorAll(".tema");
 
 window.addEventListener("load", sidenVises);
 function sidenVises() {
@@ -26,6 +28,10 @@ function sidenVises() {
   pil.addEventListener("mouseout", herobutton_mouseout);
   button.addEventListener("mouseover", herobutton_mouseover);
   button.addEventListener("mouseout", herobutton_mouseout);
+  /**boks.addEventListener("mouseover", temaboks_mouseover);
+  boks.addEventListener("mouseout", temaboks_mouseout);
+  tema.addEventListener("mouseover", temaboks_mouseover);
+  tema.addEventListener("mouseout", temaboks_mouseout);*/
   //tilføjer animation på tekst på forsiden
   herotext.classList.add("flyvop");
   button.classList.add("flyvop", "delay2");
@@ -39,3 +45,11 @@ function herobutton_mouseout() {
   button.classList.remove("buttonhover");
   buttontext.classList.remove("hoveronp");
 }
+/*function temaboks_mouseover() {
+  tema.classList.add("temahover");
+  boks.classList.add("bokshover");
+}
+function temaboks_mouseout() {
+  tema.classList.remove("temahover");
+  boks.classList.remove("bokshover");
+}*/

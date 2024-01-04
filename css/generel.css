@@ -109,6 +109,11 @@ body {
   border: 1px solid #ff1139;
   padding: 1ch;
 }
+.boks:hover {
+  background-color: #fff8e6;
+  border: 1px solid #ff1139;
+  color: #ff1139;
+}
 .boks p {
   font-size: 3.5cqw;
 }
@@ -158,8 +163,15 @@ body {
     rotate: 180deg;
     height: 530px;
   }
+  .boks:hover {
+    position: absolute;
+    width: 16ch;
+    transition: 1s ease;
+    margin: auto;
+  }
+
   .boks p {
-    font-size: 4ch;
+    font-size: 3ch;
   }
   .grid_1fr-1fr {
     display: flex;
@@ -168,7 +180,13 @@ body {
   .tema {
     display: flex;
     flex-direction: column;
+    padding: 10px;
     order: 2;
+    z-index: 1;
+  }
+  .temahover {
+    position: absolute;
+    z-index: 1;
   }
   .tema h2 {
     font-size: 8cqw;
