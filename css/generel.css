@@ -1,4 +1,7 @@
 /*---GÆLDENDE FOR ALLE SIDER---*/
+html {
+  scroll-behavior: smooth;
+}
 a,
 li {
   text-decoration: none;
@@ -15,6 +18,11 @@ h1 {
   font-family: "Playfair Display", serif;
   text-align: center;
 }
+h2 {
+  text-align: center;
+  font-size: 6cqw;
+  color: #ff1139;
+}
 h2,
 h3 {
   font-family: "Marcellus", serif;
@@ -24,7 +32,9 @@ body {
   font-weight: 300;
   background-color: #fff8e6;
 }
-
+#section1 {
+  padding: 2ch;
+}
 /*---FORSIDE herosection---*/
 .hero-img {
   display: grid;
@@ -90,9 +100,7 @@ body {
   align-self: self-end;
 }
 /*----------------portfolio indholdsfortegnelse-------------------*/
-#indholdsfortegnelse {
-  padding: 2ch;
-}
+
 .grid_1fr-1fr {
   padding-top: 2ch;
 }
@@ -147,15 +155,24 @@ body {
 
   .boks {
     writing-mode: vertical-rl;
-    text-orientation: sideways;
+    rotate: 180deg;
+    height: 530px;
+  }
+  .boks p {
+    font-size: 4ch;
+  }
+  .grid_1fr-1fr {
+    display: flex;
+    gap: 10%;
   }
   .tema {
-    display: grid;
-    gap: 1ch;
+    display: flex;
+    flex-direction: column;
     order: 2;
   }
   .tema h2 {
-    font-size: 5.5cqw;
+    font-size: 8cqw;
+    text-align: left;
   }
   .tema h3 {
     font-size: 3.5cqw;
