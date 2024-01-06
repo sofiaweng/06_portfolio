@@ -40,7 +40,7 @@ img {
 .bar {
   display: block;
   width: 35px;
-  height: 3px;
+  height: 2px;
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -58,10 +58,10 @@ img {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
   }
   /*menu settings, standard gør den ikke synlig*/
   .nav-menu {
