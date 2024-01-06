@@ -15,21 +15,22 @@ header {
 h1 {
   color: #ff1139;
   font-size: 14cqw;
-  font-family: "Playfair Display", serif;
+  font-family: "viaoda libre", serif;
+  font-weight: 300;
   text-align: center;
 }
 h2 {
+  font-family: "Viaoda Libre", serif;
   text-align: center;
   font-size: 6cqw;
   color: #ff1139;
 }
 h2,
 h3 {
-  font-family: "Marcellus", serif;
+  font-family: "Viaoda Libre", serif;
 }
 body {
-  font-family: "Red Rose", serif;
-  font-weight: 300;
+  font-family: "Marcellus", serif;
   background-color: #fff8e6;
 }
 #section1 {
@@ -52,7 +53,8 @@ body {
   background-image: url(../img/illustrations/backgroundimg3.svg);
   transition: 1s;
 }
-/*container for tekst og knap til section*/
+/*container for tekst og knap til section
+gør så man kan align tekst og knap indenfor sit grid*/
 .hero-fill {
   display: grid;
 }
@@ -85,17 +87,7 @@ body {
   font-style: italic;
   transition: 0.2s;
 }
-.pil {
-  aspect-ratio: 23/32;
-  background-image: url(../img/icons/arrowdown.webp);
-  background-size: cover;
-  height: auto;
-  width: 2.5%;
-  /*placerer item i midten*/
-  margin: auto;
-  /*luft mellem knapperne*/
-  margin-top: 5px;
-}
+
 .hero-text {
   align-self: self-end;
 }
@@ -131,9 +123,13 @@ body {
     width: 90%;
     margin: auto;
   }
+
   /*--FORSIDE hero-section--*/
+
   .hero-img {
-    aspect-ratio: 1920/900;
+    aspect-ratio: 1920/925;
+    background-size: cover;
+    /* height: 90vh;*/
     transition: 1s;
   }
   /*sætter container i bunden af section i stedet for at det ligger spredt*/
@@ -149,10 +145,7 @@ body {
   .button p {
     font-size: 1.9cqw;
   }
-  .pil {
-    width: 2%;
-    margin-top: 10px;
-  }
+
   #indholdsfortegnelse {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -183,6 +176,7 @@ body {
     padding: 10px;
     order: 2;
     z-index: 1;
+    pointer-events: none;
   }
   .temahover {
     position: absolute;

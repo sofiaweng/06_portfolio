@@ -24,8 +24,6 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenvises");
   //tilføjer eventlistener på hero-button
-  pil.addEventListener("mouseover", herobutton_mouseover);
-  pil.addEventListener("mouseout", herobutton_mouseout);
   button.addEventListener("mouseover", herobutton_mouseover);
   button.addEventListener("mouseout", herobutton_mouseout);
   /**boks.addEventListener("mouseover", temaboks_mouseover);
@@ -35,7 +33,6 @@ function sidenVises() {
   //tilføjer animation på tekst på forsiden
   herotext.classList.add("flyvop");
   button.classList.add("flyvop", "delay2");
-  pil.classList.add("flyvop", "delay3");
 }
 function herobutton_mouseover() {
   button.classList.add("buttonhover");
