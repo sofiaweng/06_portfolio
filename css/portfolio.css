@@ -3,9 +3,7 @@ main {
   width: 70%;
   margin: auto;
 }
-#indholdsfortegnelse {
-  gap: 5ch;
-}
+
 .grid_1fr-1fr {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,7 +17,7 @@ main {
 }
 .grid_1fr {
   display: grid;
-  gap: 5ch;
+  gap: 3ch;
 }
 .nr {
   text-align: right;
@@ -29,9 +27,10 @@ main {
 }
 .backgroundimg5 {
   position: absolute;
-  aspect-ratio: ;
-  transition: 1s;
+  /*height: 105vh;*/
+  z-index: -1;
 }
+
 /*DESKTOP*/
 @media (min-width: 700px) {
   body {
@@ -44,24 +43,21 @@ main {
   .backgroundimg4 {
     display: inherit;
     position: absolute;
-    aspect-ratio: 8/9;
+    aspect-ratio: 9.5/9;
     width: 85%;
     z-index: -1;
     transition: 1s;
   }
   .section2 {
     h1 {
-      font-size: 10cqw;
+      font-size: 8cqw;
     }
     height: 85vh;
   }
   .nr {
-    font-size: 8cqw;
+    font-size: 6cqw;
   }
-  h2 {
-    text-align: center;
-    font-size: 8cqw;
-  }
+
   #indholdsfortegnelse {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,7 +65,7 @@ main {
 }
 @media (min-width: 900px) {
   .backgroundimg4 {
-    aspect-ratio: 9/9;
+    aspect-ratio: 11/9;
     transition: 1s;
   }
 }
