@@ -44,7 +44,7 @@ main {
     display: inherit;
     position: absolute;
     aspect-ratio: 9.5/9;
-    width: 85%;
+    width: 90%;
     z-index: -1;
     transition: 1s;
   }
