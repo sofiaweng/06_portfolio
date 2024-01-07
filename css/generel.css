@@ -7,6 +7,18 @@ li {
   text-decoration: none;
   list-style: none;
   color: #484848;
+  transition: 0.5s;
+}
+a:hover {
+  color: #ff1139;
+  transition: 0.5s;
+}
+.active {
+  color: #ff1139;
+}
+.nr:hover {
+  font-size: 16cqw;
+  transition: 0.5s;
 }
 header {
   border-bottom: #ff1139 1px solid;
@@ -22,6 +34,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 15cqw;
+  transition: 0.5s;
 }
 h2,
 h3 {
@@ -37,6 +50,23 @@ body {
   background-color: #fff8e6;
 }
 
+/*TEMA UNDERSIDERNE*/
+.header_goback h1 {
+  margin-bottom: -20px;
+}
+.header_goback p {
+  color: #484848;
+}
+@media (min-width: 700px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+  .nr:hover {
+    font-size: 10cqw;
+    transition: 0.5s;
+  }
+}
 /*ANIMATIONER*/
 .flyvop {
   animation-name: flyvop_kf;
@@ -46,6 +76,22 @@ body {
   animation-fill-mode: forwards;
 }
 @keyframes flyvop_kf {
+  0% {
+    translate: 0 300%;
+  }
+  100% {
+    translate: 0%;
+  }
+}
+
+.flyvfrasiden {
+  animation-name: flyvfrasiden_kf;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes flyvfrasiden_kf {
   0% {
     translate: 0 300%;
   }

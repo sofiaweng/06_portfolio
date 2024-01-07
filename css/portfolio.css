@@ -41,10 +41,6 @@ h2 {
 }
 /*DESKTOP*/
 @media (min-width: 700px) {
-  header {
-    width: 85%;
-    margin: auto;
-  }
   .backgroundimg5 {
     display: none;
   }

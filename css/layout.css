@@ -127,7 +127,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
   margin: auto;
   transition: 0.5s;
 }
-.button p {
+.buttontext {
   text-align: center;
   padding: 8%;
   font-size: 3.5cqw;
@@ -139,8 +139,8 @@ gør så man kan align tekst og knap indenfor sit grid*/
   transition: 0.5s;
 }
 .hoveronp {
-  font-style: italic;
-  transition: 0.2s;
+  color: #ff1139;
+  transition: 0.5s;
 }
 
 .hero-text {
@@ -152,9 +152,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
   grid-template-columns: 1fr 3.8fr 1fr;
   padding: 1ch;
 }
-.header_goback h1 {
-  margin-bottom: -20px;
-}
+
 .back {
   background-image: url(../img/icons/arrowback.webp);
   background-size: cover;
@@ -172,11 +170,6 @@ gør så man kan align tekst og knap indenfor sit grid*/
 }
 /*DESKTOP*/
 @media (min-width: 700px) {
-  body {
-    width: 90%;
-    margin: auto;
-  }
-
   /*--FORSIDE hero-section--*/
   .hero-fill h1 {
     font-size: 14cqw;
