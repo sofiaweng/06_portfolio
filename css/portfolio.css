@@ -1,9 +1,11 @@
 /*----------------portfolio indholdsfortegnelse-------------------*/
-main {
+#indholdsfortegnelse {
   width: 70%;
   margin: auto;
 }
-
+h2 {
+  margin-bottom: -20px;
+}
 .grid_1fr-1fr {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,7 +15,11 @@ main {
 .grid_1fr-2fr {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+#indholdsfortegnelse p,
+#indholdsfortegnelse h3 {
   text-align: right;
+  margin-bottom: -20px;
 }
 .grid_1fr {
   display: grid;
@@ -27,13 +33,15 @@ main {
 }
 .backgroundimg5 {
   position: absolute;
-  /*height: 105vh;*/
+
   z-index: -1;
 }
-
+.body {
+  overflow: hidden;
+}
 /*DESKTOP*/
 @media (min-width: 700px) {
-  body {
+  header {
     width: 85%;
     margin: auto;
   }
@@ -43,10 +51,14 @@ main {
   .backgroundimg4 {
     display: inherit;
     position: absolute;
-    aspect-ratio: 9.5/9;
-    width: 90%;
+    aspect-ratio: 10/9;
+    width: 95%;
     z-index: -1;
-    transition: 1s;
+    transition: 0.5s;
+  }
+  .grid_1fr {
+    display: grid;
+    gap: 6ch;
   }
   .section2 {
     h1 {
@@ -55,41 +67,26 @@ main {
     height: 85vh;
   }
   .nr {
-    font-size: 6cqw;
+    font-size: 9cqw;
   }
 
   #indholdsfortegnelse {
+    width: 85%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 6ch;
   }
 }
 @media (min-width: 900px) {
   .backgroundimg4 {
-    aspect-ratio: 11/9;
-    transition: 1s;
+    aspect-ratio: 11.5/9;
+    transition: 0.5s;
   }
-}
-
-/*ANIMATIONER*/
-.flyvop {
-  animation-name: flyvop_kf;
-  animation-duration: 0.6s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-@keyframes flyvop_kf {
-  0% {
-    translate: 0 300%;
+  #indholdsfortegnelse p,
+  #indholdsfortegnelse h3,
+  .nr {
+    margin-bottom: -30px;
+    transition: 0.3s;
   }
-  100% {
-    translate: 0%;
-  }
-}
-.pos1 {
-  translate: 0 300%;
-}
-
-.delay2 {
-  animation-delay: 0.5s;
 }

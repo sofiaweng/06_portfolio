@@ -30,99 +30,13 @@ h3 {
 }
 p {
   color: #ff1139;
+  text-align: center;
 }
 body {
   font-family: "Marcellus", serif;
   background-color: #fff8e6;
 }
 
-/*---FORSIDE herosection---*/
-.hero-img {
-  display: grid;
-  /*aspect-ratio: 80/100;*/
-  background-image: url(../img/illustrations/backgroundimg.svg);
-  background-size: cover;
-  padding-bottom: 2%;
-  border-bottom: #ff1139 1px solid;
-  width: 100%;
-  height: auto;
-  transition: 1s;
-  overflow: hidden;
-  height: 85vh;
-}
-.hero-img:hover {
-  background-image: url(../img/illustrations/backgroundimg3.svg);
-  transition: 1s;
-}
-/*container for tekst og knap til section
-gør så man kan align tekst og knap indenfor sit grid*/
-.hero-fill {
-  display: grid;
-}
-/*tekst og knap tilhørende til hero-fill*/
-#hero-button {
-  padding-bottom: 5%;
-  align-self: self-end;
-}
-.button {
-  aspect-ratio: 485/127;
-  background-image: url(../img/icons/button_default.webp);
-  background-size: cover;
-  width: 45%;
-  height: auto;
-  /*placerer item i midten*/
-  margin: auto;
-  transition: 0.5s;
-}
-.button p {
-  text-align: center;
-  padding: 8%;
-  font-size: 3.5cqw;
-  transition: 0.2s;
-  color: #484848;
-}
-.buttonhover {
-  background-image: url(../img/icons/button_hover.webp);
-  transition: 0.5s;
-}
-.hoveronp {
-  font-style: italic;
-  transition: 0.2s;
-}
-
-.hero-text {
-  align-self: self-end;
-}
-
-/*DESKTOP*/
-@media (min-width: 700px) {
-  body {
-    width: 90%;
-    margin: auto;
-  }
-
-  /*--FORSIDE hero-section--*/
-
-  .hero-img {
-    /*aspect-ratio: 1920/925;*/
-    background-size: cover;
-    height: 90vh;
-    transition: 1s;
-  }
-  /*sætter container i bunden af section i stedet for at det ligger spredt*/
-  .hero-fill {
-    align-self: self-end;
-  }
-  #hero-button {
-    padding-bottom: 0%;
-  }
-  .button {
-    width: 27%;
-  }
-  .button p {
-    font-size: 1.9cqw;
-  }
-}
 /*ANIMATIONER*/
 .flyvop {
   animation-name: flyvop_kf;
