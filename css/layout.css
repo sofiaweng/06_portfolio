@@ -168,6 +168,10 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .back a {
   color: transparent;
 }
+
+.temabeskrivelse p {
+  text-align: justify;
+}
 /*DESKTOP*/
 @media (min-width: 700px) {
   /*--FORSIDE hero-section--*/
