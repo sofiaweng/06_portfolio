@@ -153,17 +153,18 @@ gør så man kan align tekst og knap indenfor sit grid*/
   align-self: self-end;
 }
 /*GÆLDENDE FOR TEMASIDERNE*/
+/*topdelen af temasiderne med h1 og pil tilbage*/
 .header_goback {
   display: grid;
   grid-template-columns: 1fr 3.8fr 1fr;
   padding: 1ch;
 }
-
+/*pil tilbage knap*/
 .back {
   background-image: url(../img/icons/arrowback.webp);
   background-size: cover;
   aspect-ratio: 53/31;
-  width: 50px;
+  width: 37px;
   margin: 2ch;
   transition: 0.5s;
 }
@@ -171,69 +172,73 @@ gør så man kan align tekst og knap indenfor sit grid*/
   background-image: url(../img/icons/arrowbackhover.webp);
   transition: 0.5s;
 }
+/*tekst for knappen er usynlig*/
 .back a {
   color: transparent;
 }
-
+/*temabeskrivelse*/
 .temabeskrivelse p {
   text-align: justify;
+  margin-bottom: 1rem;
+}
+.temabeskrivelse {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.temabeskrivelse .button {
+  width: 60%;
+}
+.temabeskrivelse .buttontext {
+  text-align: center;
+}
+/*billeder*/
+.grid_2fr-1fr {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 75%;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.galleri {
+  background-image: url(../img/illustrations/backgroundimg.svg);
+  background-size: cover;
+}
+.grid_2fr-1fr img {
+  border: 1px solid var(--red);
 }
 
-/*OM MIG*/
+/*----OM MIG-----*/
 em {
   color: var(--black);
 }
-.cv img {
-  width: 50%;
-  margin: auto;
-}
+
 .cv h2 {
   font-size: 6cqw;
 }
 .col1 section,
 .col2 section {
+  hyphens: auto;
   margin: 1.5rem;
 }
-.col1 {
-  background-image: url(../img/illustrations/backgroundimg.svg);
-  background-size: cover;
-}
-.kontakt {
-  background-color: var(--beige);
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  border: var(--red) 1px solid;
-  padding: 1rem;
-  margin-left: 0;
-  text-align: justify;
-}
-.kontakt h3 {
-  border-bottom: 1px solid var(--red);
-}
-.kontakt li {
-  padding-top: 2rem;
-}
-.kontakt a {
-  color: var(--red);
-}
-.kontakt a:hover {
-  color: var(--black);
-}
 
+/*alt tekst får text-align justify og sættes til venstre*/
 .cv p,
 .cv h2,
 .cv h1 {
   text-align: justify;
 }
+/*---COLUMN 1--*/
 .cv img {
   margin: 0;
   width: 100%;
   border: var(--red) 1px solid;
   border-radius: 5rem;
 }
-.uddannelse {
-  display: grid;
-  gap: 1rem;
+.col1 {
+  background-image: url(../img/illustrations/backgroundimg.svg);
+  background-size: cover;
 }
 .grid_1fr1fr {
   display: grid;
@@ -246,7 +251,35 @@ em {
 .col1 section:last-child {
   margin-left: 0;
 }
-
+/*kontaktboks*/
+.kontakt {
+  background-color: var(--beige);
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: var(--red) 1px solid;
+  padding: 1rem;
+  margin-left: 0;
+  text-align: justify;
+  h3 {
+    border-bottom: 1px solid var(--red);
+  }
+  li {
+    padding-top: 2rem;
+  }
+  a {
+    color: var(--red);
+    transition: 0.5s;
+  }
+  a:hover {
+    color: var(--black);
+    transition: 0.5s;
+  }
+}
+/*--COLUMN 2--*/
+.uddannelse {
+  display: grid;
+  gap: 1rem;
+}
 .kompetencer li {
   list-style: circle;
   color: var(--red);
@@ -279,35 +312,48 @@ em {
   .button p {
     font-size: 1.9cqw;
   }
+
   h1 {
     font-size: 8cqw;
   }
-  /*--OM MIG--*/
-  .col1 {
-    background-image: url(../img/illustrations/backgroundimg4.svg);
-    background-size: cover;
+  /*--tema--*/
+  .grid_2fr-1fr {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
+  .temabeskrivelse {
+    width: 75%;
+    margin: auto;
+  }
+  .temabeskrivelse .button {
+    width: 30%;
+  }
+  .temabeskrivelse .buttontext {
+    font-size: inherit;
+  }
+  /*--OM MIG--*/
   .cv {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  .cv p,
-  .cv h2,
-  .cv h1 {
-    text-align: left;
+  .grid_1fr1fr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-
   .cv img {
     width: 75%;
     border-radius: 10rem;
   }
-  .grid_1fr1fr {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
   .cv h2 {
     font-size: 3cqw;
+  }
+  .col1 {
+    background-image: url(../img/illustrations/backgroundimg4.svg);
+    background-size: cover;
   }
   .col2 {
     border-left: 1px solid var(--red);
