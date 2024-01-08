@@ -33,11 +33,25 @@ h2 {
 }
 .backgroundimg5 {
   position: absolute;
-
   z-index: -1;
 }
-.body {
-  overflow: hidden;
+
+.tema:hover {
+  .nr {
+    font-size: 16cqw;
+    transition: 0.5s;
+    color: #ff1139;
+  }
+  p {
+    font-size: 3.1cqw;
+    transition: 0.5s;
+    color: #484848;
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: #ff1139;
+    transition: 0.5s;
+  }
 }
 /*DESKTOP*/
 @media (min-width: 700px) {
@@ -60,8 +74,8 @@ h2 {
     h1 {
       font-size: 8cqw;
     }
-    height: 85vh;
   }
+
   .nr {
     font-size: 9cqw;
   }
@@ -72,6 +86,22 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6ch;
+  }
+  .tema:hover {
+    .nr {
+      font-size: 9.5cqw;
+      transition: 0.5s;
+    }
+    p {
+      font-size: large;
+      transition: 0.5s;
+      color: #484848;
+    }
+    h3 {
+      font-size: 1.3rem;
+      color: #ff1139;
+      transition: 0.5s;
+    }
   }
 }
 @media (min-width: 900px) {

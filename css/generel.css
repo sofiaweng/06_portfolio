@@ -16,10 +16,7 @@ a:hover {
 .active {
   color: #ff1139;
 }
-.nr:hover {
-  font-size: 16cqw;
-  transition: 0.5s;
-}
+
 header {
   border-bottom: #ff1139 1px solid;
 }
@@ -44,8 +41,7 @@ h3 {
 p {
   color: #ff1139;
   text-align: center;
-  margin-left: 2ch;
-  margin-right: 2ch;
+  transition: 0.5s;
 }
 body {
   font-family: "Marcellus", serif;
@@ -63,10 +59,6 @@ body {
   body {
     width: 90%;
     margin: auto;
-  }
-  .nr:hover {
-    font-size: 10cqw;
-    transition: 0.5s;
   }
 }
 /*ANIMATIONER*/
