@@ -1,28 +1,33 @@
 /*---GÆLDENDE FOR ALLE SIDER---*/
 html {
   scroll-behavior: smooth;
+  --red: #ff1139;
+  --pink: #ffbabd;
+  --black: #484848;
+  --beige: #fff8e6;
 }
+
 a,
 li {
   text-decoration: none;
   list-style: none;
-  color: #484848;
+  color: var(--black);
   transition: 0.5s;
 }
 a:hover {
-  color: #ff1139;
+  color: var(--red);
   transition: 0.5s;
 }
 .active {
-  color: #ff1139;
+  color: var(--red);
 }
 
 header {
-  border-bottom: #ff1139 1px solid;
+  border-bottom: var(--red) 1px solid;
 }
 
 h1 {
-  color: #484848;
+  color: var(--black);
   font-size: 14cqw;
   font-family: "viaoda libre", serif;
   font-weight: 300;
@@ -36,16 +41,32 @@ h2 {
 h2,
 h3 {
   font-family: "Viaoda Libre", serif;
-  color: #484848;
+  color: var(--black);
 }
 p {
-  color: #ff1139;
+  color: var(--red);
   text-align: center;
   transition: 0.5s;
 }
+
 body {
   font-family: "Marcellus", serif;
-  background-color: #fff8e6;
+  background-color: var(--beige);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  border-bottom: var(--red) 1px solid;
+  padding-bottom: 3px;
+}
+.flex-row p {
+  color: var(--black);
+}
+.flex-row :first-child {
+  border-right: 1px solid var(--red);
+  padding-right: 0.5rem;
 }
 
 /*TEMA UNDERSIDERNE*/
@@ -53,7 +74,7 @@ body {
   margin-bottom: -20px;
 }
 .header_goback p {
-  color: #484848;
+  color: var(--black);
 }
 @media (min-width: 700px) {
   body {

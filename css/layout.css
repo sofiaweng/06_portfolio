@@ -44,7 +44,7 @@ img {
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #ff1139;
+  background-color: var(--red);
   border-radius: 2px;
 }
 /*-------------mobil---------------*/
@@ -70,18 +70,24 @@ img {
     top: 11.7ch;
     gap: 0;
     flex-direction: column;
-    background-color: #ffbabd;
+    background-color: var(--pink);
     width: 100%;
     text-align: center;
     transition: 0.3s;
     z-index: 1;
   }
+
   .nav-link {
     font-size: 5cqw;
+    /* color: var(--red);*/
   }
+  /*
+  .active {
+    color: var(--black);
+  }*/
   .nav-item {
     margin: 35px 16px;
-    border-bottom: #ff1139 1px solid;
+    border-bottom: var(--red) 1px solid;
   }
   /*kommer frem, når den er active*/
   .nav-menu.active {
@@ -96,7 +102,7 @@ img {
   background-image: url(../img/illustrations/backgroundimg.svg);
   background-size: cover;
   padding-bottom: 2%;
-  border-bottom: #ff1139 1px solid;
+  border-bottom: var(--red) 1px solid;
   width: 100%;
   height: auto;
   transition: 1s;
@@ -132,14 +138,14 @@ gør så man kan align tekst og knap indenfor sit grid*/
   padding: 8%;
   font-size: 3.5cqw;
   transition: 0.2s;
-  color: #484848;
+  color: var(--black);
 }
 .buttonhover {
   background-image: url(../img/icons/button_hover.webp);
   transition: 0.5s;
 }
 .hoveronp {
-  color: #ff1139;
+  color: var(--red);
   transition: 0.5s;
 }
 
@@ -174,6 +180,9 @@ gør så man kan align tekst og knap indenfor sit grid*/
 }
 
 /*OM MIG*/
+em {
+  color: var(--black);
+}
 .cv img {
   width: 50%;
   margin: auto;
@@ -181,10 +190,70 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .cv h2 {
   font-size: 6cqw;
 }
-.col1 div,
-.col2 div {
-  margin: 2ch;
+.col1 section,
+.col2 section {
+  margin: 1.5rem;
 }
+.col1 {
+  background-image: url(../img/illustrations/backgroundimg.svg);
+  background-size: cover;
+}
+.kontakt {
+  background-color: var(--beige);
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: var(--red) 1px solid;
+  padding: 1rem;
+  margin-left: 0;
+  text-align: justify;
+}
+.kontakt h3 {
+  border-bottom: 1px solid var(--red);
+}
+.kontakt li {
+  padding-top: 2rem;
+}
+.kontakt a {
+  color: var(--red);
+}
+.kontakt a:hover {
+  color: var(--black);
+}
+
+.cv p,
+.cv h2,
+.cv h1 {
+  text-align: justify;
+}
+.cv img {
+  margin: 0;
+  width: 100%;
+  border: var(--red) 1px solid;
+  border-radius: 5rem;
+}
+.uddannelse {
+  display: grid;
+  gap: 1rem;
+}
+.grid_1fr1fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.col1 section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.col1 section:last-child {
+  margin-left: 0;
+}
+
+.kompetencer li {
+  list-style: circle;
+  color: var(--red);
+  margin-left: 1rem;
+  padding-bottom: 2px;
+}
+
 /*DESKTOP*/
 @media (min-width: 700px) {
   /*--FORSIDE hero-section--*/
@@ -214,7 +283,12 @@ gør så man kan align tekst og knap indenfor sit grid*/
     font-size: 8cqw;
   }
   /*--OM MIG--*/
+  .col1 {
+    background-image: url(../img/illustrations/backgroundimg4.svg);
+    background-size: cover;
+  }
   .cv {
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -223,14 +297,20 @@ gør så man kan align tekst og knap indenfor sit grid*/
   .cv h1 {
     text-align: left;
   }
+
   .cv img {
-    width: 60%;
-    margin: 0;
+    width: 75%;
+    border-radius: 10rem;
+  }
+  .grid_1fr1fr {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .cv h2 {
     font-size: 3cqw;
   }
   .col2 {
-    border-left: 1px solid #ff1139;
+    border-left: 1px solid var(--red);
+    width: 80%;
   }
 }
