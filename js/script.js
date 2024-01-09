@@ -25,21 +25,10 @@ const tema05 = document.querySelector("#tema05");*/
 window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenvises");
-  //tilføjer eventlistener på hero-button
-  button.addEventListener("mouseover", herobutton_mouseover);
-  button.addEventListener("mouseout", herobutton_mouseout);
   //tilføjer animation på tekst på forsiden
   herotext.classList.add("flyvop");
   button.classList.add("flyvop", "delay2");
 
   /*tilføjer animation på temaerne på portfolio
    tema02.classList.add("flyvop");*/
-}
-function herobutton_mouseover() {
-  button.classList.add("buttonhover");
-  buttontext.classList.add("hoveronp");
-}
-function herobutton_mouseout() {
-  button.classList.remove("buttonhover");
-  buttontext.classList.remove("hoveronp");
 }

@@ -141,11 +141,11 @@ gør så man kan align tekst og knap indenfor sit grid*/
   transition: 0.2s;
   color: var(--black);
 }
-.buttonhover {
+.button:hover {
   background-image: url(../img/icons/button_hover.webp);
   transition: 0.5s;
 }
-.hoveronp {
+.buttontext:hover {
   color: var(--red);
   transition: 0.5s;
 }
@@ -187,6 +187,14 @@ gør så man kan align tekst og knap indenfor sit grid*/
   border-bottom: 1px solid var(--red);
   padding-bottom: 1rem;
 }
+.temabeskrivelse h2 {
+  padding-top: 1rem;
+  font-size: 6cqw;
+}
+.temabeskrivelse h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
 .temabeskrivelse .button {
   width: 60%;
 }
@@ -209,7 +217,23 @@ gør så man kan align tekst og knap indenfor sit grid*/
   padding: 0 0.5rem 0 0.5rem;
   border-left: 1px solid var(--red);
 }
-.navigation {
+/*til top knap*/
+.tiltop {
+  background-image: url(../img/icons/arrowup_default.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 6%;
+  position: fixed;
+  bottom: 0;
+  right: 48%;
+  transition: 0.5s;
+}
+.tiltop a {
+  color: transparent;
+}
+.tiltop:hover {
+  background-image: url(../img/icons/arrowup_hover.webp);
+  transition: 0.5s;
 }
 /*billeder*/
 .grid_2fr-1fr {
@@ -221,9 +245,16 @@ gør så man kan align tekst og knap indenfor sit grid*/
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.galleri {
+.galleri02 {
   background-image: url(../img/illustrations/backgroundimg.svg);
   background-size: cover;
+}
+.galleri03 {
+  background-image: url(../img/illustrations/backgroundimg5.svg);
+  background-size: contain;
+}
+.galleri03 img {
+  border: 1px solid var(--red);
 }
 .grid_2fr-1fr img {
   border: 1px solid var(--red);
@@ -348,14 +379,42 @@ em {
     width: 75%;
     margin: auto;
   }
+  /*navigation*/
   .navigation nav {
     margin: 0;
+  }
+  .tiltop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 3.5rem 2rem 0;
+    transition: 0.5s;
   }
   .temabeskrivelse .button {
     width: 30%;
   }
   .temabeskrivelse .buttontext {
     font-size: inherit;
+  }
+  .temabeskrivelse h2 {
+    font-size: 3.5cqw;
+  }
+  /*galleri*/
+  .grid_1fr_1fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  #research .grid_1fr_1fr {
+    display: grid;
+    grid-template-columns: 1fr 1.12fr;
+  }
+  #skitse .grid_1fr :last-child {
+    margin-top: 1rem;
+  }
+  #skitse .grid_1fr_1fr {
+    display: grid;
+    grid-template-columns: 1fr 1.18fr;
   }
   /*--OM MIG--*/
   .cv {
