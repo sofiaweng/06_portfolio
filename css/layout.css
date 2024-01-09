@@ -132,6 +132,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
   /*placerer item i midten*/
   margin: auto;
   transition: 0.5s;
+  margin-top: 1rem;
 }
 .buttontext {
   text-align: center;
@@ -179,17 +180,36 @@ gør så man kan align tekst og knap indenfor sit grid*/
 /*temabeskrivelse*/
 .temabeskrivelse p {
   text-align: justify;
-  margin-bottom: 1rem;
 }
 .temabeskrivelse {
   margin-left: 2rem;
   margin-right: 2rem;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 1rem;
 }
 .temabeskrivelse .button {
   width: 60%;
 }
 .temabeskrivelse .buttontext {
   text-align: center;
+}
+/*navigation*/
+.navigation nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid var(--red);
+}
+.navigation nav li {
+  border-right: 1px solid var(--red);
+  padding: 0 0.5rem 0 0.5rem;
+  border-left: 1px solid var(--red);
+}
+.navigation {
 }
 /*billeder*/
 .grid_2fr-1fr {
@@ -323,9 +343,13 @@ em {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  .temabeskrivelse {
+  .temabeskrivelse,
+  .navigation {
     width: 75%;
     margin: auto;
+  }
+  .navigation nav {
+    margin: 0;
   }
   .temabeskrivelse .button {
     width: 30%;
