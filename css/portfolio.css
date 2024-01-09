@@ -2,7 +2,7 @@
 #indholdsfortegnelse {
   width: 70%;
   margin: auto;
-  padding-bottom: 45%;
+  padding-bottom: 35%;
 }
 footer {
   border-top: var(--red) 1px solid;
@@ -38,6 +38,7 @@ h2 {
 .backgroundimg5 {
   position: absolute;
   z-index: -1;
+  pointer-events: none;
 }
 
 .tema:hover {
@@ -69,6 +70,7 @@ h2 {
     width: 95%;
     z-index: -1;
     transition: 0.5s;
+    pointer-events: none;
   }
   .grid_1fr {
     display: grid;
@@ -90,6 +92,8 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6ch;
+    padding-bottom: 32%;
+    overflow: hidden;
   }
   .tema:hover {
     .nr {

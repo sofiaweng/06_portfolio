@@ -284,6 +284,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
   background-image: url(../img/icons/arrowup_hover.webp);
   transition: 0.5s;
 }
+
 /*billeder*/
 .grid_2fr-1fr {
   display: grid;
@@ -297,6 +298,9 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .galleri02 {
   background-image: url(../img/illustrations/backgroundimg.svg);
   background-size: cover;
+}
+.galleri02 img {
+  transition: 0.5s;
 }
 .galleri03 {
   background-image: url(../img/illustrations/backgroundimg5.svg);
@@ -470,6 +474,11 @@ em {
   .header_goback {
     background-size: 38%;
     margin-bottom: 5px;
+  }
+  .grid_1fr-1fr-1fr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .grid_2fr-1fr {
     display: grid;

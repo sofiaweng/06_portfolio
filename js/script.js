@@ -17,11 +17,20 @@ const pil = document.querySelector(".pil");
 const button = document.querySelector(".button");
 const buttontext = document.querySelector(".buttontext");
 const herotext = document.querySelector(".hero-text");
-
+//const image = document.querySelectorAll("image");
 window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenvises");
   //tilføjer animation på tekst på forsiden
   herotext.classList.add("flyvop");
   button.classList.add("flyvop", "delay2");
+  /**
+  //tilføjer addeventlistener på alle img
+  image.addEventListener("mousedown", clickimg);
+   */
 }
+/** 
+function clickimg() {
+  console.log("clickimg");
+  img.classList.add(imgclick);
+}*/
