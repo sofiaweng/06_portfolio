@@ -25,10 +25,7 @@ a:hover {
 header {
   border-bottom: var(--red) 1px solid;
 }
-.logo {
-  width: 35%;
-  margin: 2rem 2rem 0 2rem;
-}
+
 h1 {
   color: var(--black);
   font-size: 14cqw;
