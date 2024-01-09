@@ -93,7 +93,6 @@ h2 {
     grid-template-columns: 1fr 1fr;
     gap: 6ch;
     padding-bottom: 32%;
-    overflow: hidden;
   }
   .tema:hover {
     .nr {
