@@ -124,7 +124,6 @@ footer {
   background-image: url(../img/illustrations/backgroundimg.svg);
   background-size: cover;
   padding-bottom: 2%;
-  border-bottom: var(--red) 1px solid;
   width: 100%;
   height: auto;
   transition: 1s;
