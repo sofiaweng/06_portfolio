@@ -306,6 +306,15 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .galleri03 img {
   border: 1px solid var(--red);
 }
+.galleri04 img {
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 1px solid var(--red);
+}
+.galleri04 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .grid_2fr-1fr img {
   border: 1px solid var(--red);
 }
