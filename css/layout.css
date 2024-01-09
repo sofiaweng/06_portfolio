@@ -345,9 +345,10 @@ em {
     gap: 1rem;
   }
   .cv img {
-    width: 75%;
+    width: 70%;
     border-radius: 10rem;
   }
+
   .cv h2 {
     font-size: 3cqw;
   }
