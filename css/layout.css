@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-img {
+img,
+video {
   width: 100%;
   height: auto;
   display: block;
@@ -29,7 +30,8 @@ img {
 }
 /*logo*/
 .nav-branding {
-  width: 20ch;
+  width: 8ch;
+  margin-left: 5px;
 }
 /*hamburgermenu*/
 .hamburger {
@@ -47,6 +49,7 @@ img {
   background-color: var(--red);
   border-radius: 2px;
 }
+
 /*-------------mobil---------------*/
 @media (max-width: 700px) {
   /*-----------BURGERMENU SETTINGS----------*/
@@ -94,7 +97,16 @@ img {
     left: 0;
   }
 }
-
+/*---FOOTER---*/
+.footerflex {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.footer {
+  text-align: right;
+  width: 50%;
+  margin-bottom: 1rem;
+}
 /*---FORSIDE herosection---*/
 .hero-img {
   display: grid;
@@ -126,7 +138,8 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .button {
   aspect-ratio: 485/127;
   background-image: url(../img/icons/button_default.webp);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 45%;
   height: auto;
   /*placerer item i midten*/
@@ -156,6 +169,10 @@ gør så man kan align tekst og knap indenfor sit grid*/
 /*GÆLDENDE FOR TEMASIDERNE*/
 /*topdelen af temasiderne med h1 og pil tilbage*/
 .header_goback {
+  background-image: url(../img/illustrations/backgroundimg4.svg);
+  background-size: 30%;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 3.8fr 1fr;
   padding: 1ch;
@@ -185,7 +202,6 @@ gør så man kan align tekst og knap indenfor sit grid*/
   margin-left: 2rem;
   margin-right: 2rem;
   border-bottom: 1px solid var(--red);
-  padding-bottom: 1rem;
 }
 .temabeskrivelse h2 {
   padding-top: 1rem;
@@ -194,28 +210,52 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .temabeskrivelse h3 {
   text-align: center;
   margin-top: 0.5rem;
+  background-color: var(--beige);
+  border-radius: 1rem 0 1rem 0;
+  border: 1px solid var(--red);
+  margin-bottom: 5px;
+  padding: 5px;
 }
 .temabeskrivelse .button {
-  width: 60%;
+  width: 50%;
+  margin-bottom: 1rem;
 }
 .temabeskrivelse .buttontext {
   text-align: center;
+  font-size: inherit;
 }
+.numberlist p {
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.numberlist h3 {
+  margin-top: 1rem;
+  border: none;
+}
+.numberlist {
+  margin-bottom: 1rem;
+}
+.numberlist .buttontext {
+  margin: 0;
+}
+
 /*navigation*/
 .navigation nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin-left: 2rem;
   margin-right: 2rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  border-bottom: 1px solid var(--red);
 }
 .navigation nav li {
   border-right: 1px solid var(--red);
   padding: 0 0.5rem 0 0.5rem;
-  border-left: 1px solid var(--red);
+}
+.navigation nav :last-child {
+  border-right: 0;
 }
 /*til top knap*/
 .tiltop {
@@ -259,7 +299,31 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .grid_2fr-1fr img {
   border: 1px solid var(--red);
 }
+#videosite div {
+  padding: 0rem 2rem 0rem 2rem;
+}
+#virksomhedssite div {
+  padding: 0rem 2rem 0rem 2rem;
+  padding-bottom: 1rem;
+}
 
+#videosite .grid_1fr_1fr {
+  padding-bottom: 1.5rem;
+}
+#virksomhedssite .grid_1fr_1fr {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+#virksomhedssite img {
+  border: 1px solid var(--red);
+}
+#virksomhedssite #research {
+  background-image: url(../img/illustrations/backgroundimg4.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+}
 /*----OM MIG-----*/
 em {
   color: var(--black);
@@ -340,6 +404,23 @@ em {
 
 /*DESKTOP*/
 @media (min-width: 700px) {
+  /*footer*/
+  .logo {
+    width: 25%;
+    margin: auto;
+  }
+  .footerflex {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    text-align: center;
+    width: initial;
+  }
+  .footer ul {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
   /*--FORSIDE hero-section--*/
   .hero-fill h1 {
     font-size: 14cqw;
@@ -368,6 +449,10 @@ em {
     font-size: 8cqw;
   }
   /*--tema--*/
+  .header_goback {
+    background-size: 38%;
+    margin-bottom: 5px;
+  }
   .grid_2fr-1fr {
     display: grid;
     grid-template-columns: 2.2fr 1fr;
@@ -394,11 +479,15 @@ em {
     width: 30%;
   }
   .temabeskrivelse .buttontext {
-    font-size: inherit;
+    font-size: 1.5cqw;
   }
   .temabeskrivelse h2 {
     font-size: 3.5cqw;
   }
+  .numberlist .button {
+    width: 55%;
+  }
+
   /*galleri*/
   .grid_1fr_1fr {
     display: grid;
@@ -416,6 +505,21 @@ em {
     display: grid;
     grid-template-columns: 1fr 1.18fr;
   }
+  #videosite .grid_1fr_1fr {
+    gap: 0;
+  }
+  #videosite div,
+  #virksomhedssite #research div {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+  }
+  #virksomhedssite #research .grid_1fr_1fr {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    padding-top: 1rem;
+  }
+
   /*--OM MIG--*/
   .cv {
     margin: auto;
@@ -442,5 +546,10 @@ em {
   .col2 {
     border-left: 1px solid var(--red);
     width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .temabeskrivelse .buttontext {
+    font-size: inherit;
   }
 }
