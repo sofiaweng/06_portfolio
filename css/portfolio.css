@@ -23,11 +23,27 @@ h2 {
 #indholdsfortegnelse p,
 #indholdsfortegnelse h3 {
   text-align: right;
-  margin-bottom: -20px;
 }
+#indholdsfortegnelse h3 {
+  margin-bottom: -15px;
+}
+
 .grid_1fr {
   display: grid;
-  gap: 3ch;
+  gap: 3.5%;
+}
+
+.grid_1fr h2 {
+  font-size: 4.2rem;
+}
+@media (max-width: 414px) {
+  .grid_1fr {
+    display: grid;
+    gap: 1ch;
+  }
+  .grid_1fr h2 {
+    font-size: 3rem;
+  }
 }
 .nr {
   text-align: right;
@@ -40,24 +56,22 @@ h2 {
   z-index: -1;
   pointer-events: none;
 }
-
-.tema:hover {
-  .nr {
-    font-size: 16cqw;
-    transition: 0.5s;
-    color: #ff1139;
-  }
-  p {
-    font-size: 3.1cqw;
-    transition: 0.5s;
-    color: #484848;
-  }
-  h3 {
-    font-size: 1.5rem;
-    color: #ff1139;
-    transition: 0.5s;
-  }
+.tema:hover .nr {
+  font-size: 5rem;
+  transition: 0.5s;
+  color: #ff1139;
 }
+.tema:hover p {
+  font-size: 1.1rem;
+  transition: 0.5s;
+  color: #484848;
+}
+.tema:hover h3 {
+  font-size: 1.5rem;
+  color: #ff1139;
+  transition: 0.5s;
+}
+
 /*DESKTOP*/
 @media (min-width: 700px) {
   .backgroundimg5 {
@@ -67,59 +81,72 @@ h2 {
     display: inherit;
     position: absolute;
     aspect-ratio: 10/9;
-    width: 95%;
+    width: 93%;
     z-index: -1;
     transition: 0.5s;
     pointer-events: none;
   }
   .grid_1fr {
     display: grid;
-    gap: 6ch;
-  }
-  .section2 {
-    h1 {
-      font-size: 8cqw;
-    }
+    gap: 3ch;
   }
 
   .nr {
-    font-size: 9cqw;
+    font-size: 5.1rem;
   }
 
   #indholdsfortegnelse {
-    width: 85%;
+    width: 83%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6ch;
     padding-bottom: 32%;
+    transition: 0.5s;
   }
-  .tema:hover {
-    .nr {
-      font-size: 9.5cqw;
-      transition: 0.5s;
-    }
-    p {
-      font-size: large;
-      transition: 0.5s;
-      color: #484848;
-    }
-    h3 {
-      font-size: 1.3rem;
-      color: #ff1139;
-      transition: 0.5s;
-    }
+  .tema:hover h3 {
+    font-size: 1.3rem;
+    color: #ff1139;
+    transition: 0.5s;
+  }
+  .tema:hover .nr {
+    font-size: 5.3rem;
+    transition: 0.5s;
+  }
+  .tema:hover p {
+    font-size: large;
+    transition: 0.5s;
+    color: #484848;
   }
 }
-@media (min-width: 900px) {
+
+@media (min-width: 1050px) {
   .backgroundimg4 {
     aspect-ratio: 11.5/9;
     transition: 0.5s;
   }
-  #indholdsfortegnelse p,
-  #indholdsfortegnelse h3,
-  .nr {
-    margin-bottom: -30px;
-    transition: 0.3s;
+  .grid_1fr {
+    display: grid;
+    gap: 10ch;
+  }
+  #indholdsfortegnelse {
+    width: 65%;
+    gap: 5ch;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 1300px) {
+  .grid_1fr {
+    display: grid;
+    gap: 12ch;
+  }
+  #indholdsfortegnelse {
+    width: 65%;
+    gap: 5ch;
+    transition: 0.5s;
+  }
+
+  .grid_1fr h2 {
+    font-size: 5.3rem;
   }
 }
