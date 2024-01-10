@@ -23,28 +23,14 @@ h2 {
 #indholdsfortegnelse p,
 #indholdsfortegnelse h3 {
   text-align: right;
-}
-#indholdsfortegnelse h3 {
-  margin-bottom: -15px;
+  margin-bottom: -20px;
 }
 
 .grid_1fr {
   display: grid;
-  gap: 3.5%;
+  gap: 3ch;
 }
 
-.grid_1fr h2 {
-  font-size: 4.2rem;
-}
-@media (max-width: 414px) {
-  .grid_1fr {
-    display: grid;
-    gap: 1ch;
-  }
-  .grid_1fr h2 {
-    font-size: 3rem;
-  }
-}
 .nr {
   text-align: right;
 }
@@ -57,12 +43,12 @@ h2 {
   pointer-events: none;
 }
 .tema:hover .nr {
-  font-size: 5rem;
+  font-size: 16cqw;
   transition: 0.5s;
   color: #ff1139;
 }
 .tema:hover p {
-  font-size: 1.1rem;
+  font-size: 3.1cqw;
   transition: 0.5s;
   color: #484848;
 }
@@ -81,22 +67,27 @@ h2 {
     display: inherit;
     position: absolute;
     aspect-ratio: 10/9;
-    width: 93%;
+    width: 95%;
     z-index: -1;
     transition: 0.5s;
     pointer-events: none;
   }
   .grid_1fr {
     display: grid;
-    gap: 3ch;
+    gap: 6ch;
+  }
+  .section2 {
+    h1 {
+      font-size: 8cqw;
+    }
   }
 
   .nr {
-    font-size: 5.1rem;
+    font-size: 9cqw;
   }
 
   #indholdsfortegnelse {
-    width: 83%;
+    width: 85%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,7 +101,7 @@ h2 {
     transition: 0.5s;
   }
   .tema:hover .nr {
-    font-size: 5.3rem;
+    font-size: 9.5cqw;
     transition: 0.5s;
   }
   .tema:hover p {
@@ -120,33 +111,15 @@ h2 {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 900px) {
   .backgroundimg4 {
     aspect-ratio: 11.5/9;
     transition: 0.5s;
   }
-  .grid_1fr {
-    display: grid;
-    gap: 10ch;
-  }
-  #indholdsfortegnelse {
-    width: 65%;
-    gap: 5ch;
-    transition: 0.5s;
-  }
-}
-@media (min-width: 1300px) {
-  .grid_1fr {
-    display: grid;
-    gap: 12ch;
-  }
-  #indholdsfortegnelse {
-    width: 65%;
-    gap: 5ch;
-    transition: 0.5s;
-  }
-
-  .grid_1fr h2 {
-    font-size: 5.3rem;
+  #indholdsfortegnelse p,
+  #indholdsfortegnelse h3,
+  .nr {
+    margin-bottom: -30px;
+    transition: 0.3s;
   }
 }
